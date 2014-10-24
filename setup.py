@@ -19,7 +19,7 @@ print """
 def usage():
     print("USAGE: python setup.py <port>")  
 
-def dnsmisconfig(argv):
+def main(argv):
     if len(argv) < 2:
         return usage()
 
