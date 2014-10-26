@@ -7,7 +7,7 @@
 # greetz: ROOTCON goons                                          #
 ##################################################################
 
-import SimpleHTTPServer, SocketServer
+import sys, SimpleHTTPServer, SocketServer
 
 print """  
   _  _                   ___      
@@ -23,7 +23,7 @@ def main(argv):
     if len(argv) < 2:
         return usage()
 
-    PORT = sys.argv[1]
+    PORT = int(sys.argv[1])
     Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
     httpd = SocketServer.TCPServer(("", PORT), Handler)
     print "HoneyPy running on", PORT
