@@ -9,9 +9,9 @@
 
 import sys, SimpleHTTPServer, SocketServer, cgi, logging
 
-print """  
-  _  _                   ___      
- | || |___ _ _  ___ _  _| _ \_  _ 
+print """
+  _  _                   ___
+ | || |___ _ _  ___ _  _| _ \_  _
  | __ / _ \ ' \/ -_) || |  _/ || |
  |_||_\___/_||_\___|\_, |_|  \_, |
                     |__/     |__/  by @shipcod3
@@ -35,17 +35,21 @@ class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
         SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 def usage():
-    print("USAGE: python setup.py <port>")  
+    print("USAGE: python setup.py <port>")
 
 def main(argv):
     if len(argv) < 2:
         return usage()
 
-    PORT = int(sys.argv[1])
+    PORT = int(sys.argv[2])
     Handler = ServerHandler
     httpd = SocketServer.TCPServer(("", PORT), Handler)
-    print "serving at port", PORT
+    print "\n [***] Honeypot Web Server is running at port", PORT
     httpd.serve_forever()
 
 if __name__ == "__main__":
-    main(sys.argv)
+    try:
+        main(sys.argv)
+    except KeyboardInterrupt:
+        print "\n HoneyPy has been stopped :("
+        pass
