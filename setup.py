@@ -7,7 +7,7 @@
 # greetz: ROOTCON goons                                          #
 ##################################################################
 
-import sys, SimpleHTTPServer, SocketServer
+import sys, SimpleHTTPServer, SocketServer, cgi, logging
 
 print """  
   _  _                   ___      
