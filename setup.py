@@ -16,6 +16,24 @@ print """
  |_||_\___/_||_\___|\_, |_|  \_, |
                     |__/     |__/  by @shipcod3
 """
+class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
+
+    def do_GET(self):
+        logging.error(self.headers)
+        SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+
+    def do_POST(self):
+        logging.error(self.headers)
+        form = cgi.FieldStorage(
+            fp=self.rfile,
+            headers=self.headers,
+            environ={'REQUEST_METHOD':'POST',
+                     'CONTENT_TYPE':self.headers['Content-Type'],
+                     })
+        for item in form.list:
+            logging.error(item)
+        SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
+
 def usage():
     print("USAGE: python setup.py <port>")  
 
@@ -24,9 +42,9 @@ def main(argv):
         return usage()
 
     PORT = int(sys.argv[1])
-    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+    Handler = ServerHandler
     httpd = SocketServer.TCPServer(("", PORT), Handler)
-    print "HoneyPy running on", PORT
+    print "serving at port", PORT
     httpd.serve_forever()
 
 if __name__ == "__main__":
