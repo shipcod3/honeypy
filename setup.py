@@ -41,7 +41,7 @@ def main(argv):
     if len(argv) < 2:
         return usage()
 
-    PORT = int(sys.argv[2])
+    PORT = int(sys.argv[1])
     Handler = ServerHandler
     httpd = SocketServer.TCPServer(("", PORT), Handler)
     print "\n [***] Honeypot Web Server is running at port", PORT
