@@ -50,6 +50,7 @@ def main(argv):
 if __name__ == "__main__":
     try:
         main(sys.argv)
+        
     except KeyboardInterrupt:
         print "\n HoneyPy has been stopped :("
         pass
