@@ -1,7 +1,7 @@
 HoneyPy
 =======
 
-A simple honeypot PoC which leverages SimpleHTTPServer which serves HTML.
+A simple web application honeypot project which leverages SimpleHTTPServer which serves HTML with a classic look from the 80's.
 
 <img src="https://raw.githubusercontent.com/shipcod3/honeypy/master/img/HoneyPY.PNG" />
 
@@ -17,6 +17,12 @@ Jay Turla (@shipcod3)
 Contributors
 ============
 N/A (open)
+
+Credits
+=======
+The Classic Bootstrap Theme from the 80's = https://kristopolous.github.io/BOOTSTRA.386/
+Twitter Bootstrap
+Glastopf - for the inspiration
 
 Contribute?
 ===========
