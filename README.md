@@ -8,7 +8,7 @@ A simple honeypot PoC which leverages SimpleHTTPServer which serves HTML.
 Usage
 =====
 
-python setup.py <port>
+python setup.py [port]
 
 Author
 ======
