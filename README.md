@@ -22,9 +22,9 @@ N/A (open)
 
 Credits
 =======
-The Classic Bootstrap Theme from the 80's = https://kristopolous.github.io/BOOTSTRA.386/
-Twitter Bootstrap
-Glastopf - for the inspiration
+- The Classic Bootstrap Theme from the 80's = https://kristopolous.github.io/BOOTSTRA.386/
+- Twitter Bootstrap
+- Glastopf - for the inspiration
 
 Contribute?
 ===========
