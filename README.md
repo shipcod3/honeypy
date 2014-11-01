@@ -3,7 +3,7 @@ HoneyPy
 
 A simple honeypot PoC which leverages SimpleHTTPServer which serves HTML.
 
-<img src="" />
+<img src="https://raw.githubusercontent.com/shipcod3/honeypy/master/img/HoneyPY.PNG" />
 
 Usage
 =====
