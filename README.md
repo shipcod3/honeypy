@@ -25,6 +25,8 @@ Credits
 - The Classic Bootstrap Theme from the 80's = https://kristopolous.github.io/BOOTSTRA.386/
 - Twitter Bootstrap
 - Glastopf - for the inspiration
+- SimpleHTTPServer (python package)
+- Python :) - well of course
 
 Contribute?
 ===========
