@@ -4,7 +4,7 @@
 # setup.py                                                       #
 # description: for running the web server honeypot               #
 # author: @shipcod3                                              #
-# greetz: ROOTCON goons                                          #
+# greetz: ROOTCON goons and baby jim trevor                      #
 ##################################################################
 
 import sys, SimpleHTTPServer, SocketServer, cgi, logging
