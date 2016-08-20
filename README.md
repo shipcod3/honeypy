@@ -8,7 +8,7 @@ A simple web application honeypot project which leverages SimpleHTTPServer which
 Usage
 =====
 
-python setup.py [port]
+```python setup.py [port]```
 
 <img src="https://raw.githubusercontent.com/shipcod3/honeypy/master/img/usage.PNG" />
 
