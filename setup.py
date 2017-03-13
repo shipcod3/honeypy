@@ -32,6 +32,8 @@ class ServerHandler(SimpleHTTPServer.SimpleHTTPRequestHandler):
                      })
         for item in form.list:
             logging.error(item)
+            if "index.php?option=com_sef&Itemid=&mosConfig_absolute_path="
+                print "This scanner / bot is looking for Mambo \"mosConfig_absolute_path\" Remote File Inclusion Vulnerability"
         SimpleHTTPServer.SimpleHTTPRequestHandler.do_GET(self)
 
 def usage():
